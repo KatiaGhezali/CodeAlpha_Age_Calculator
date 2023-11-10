@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Age Calculator</title>
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1>How old are you?</h1>
-        <label for="">Date of Birth:</label>
-        <input type="date">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required>
         <button>Calculate Age</button>
-        <p></p>
+        <p id="result"></p>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
