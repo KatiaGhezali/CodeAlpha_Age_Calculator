@@ -3,17 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Age Calculator</title>
 </head>
 <body>
-    <div class="container">
-        <h1>How old are you?</h1>
+    <div class="container mt-5">
+        <div class="card col-md-6 mx-auto">
+            <div class="card-header">
+        <h1 class="test-center">How old are you?</h1>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
         <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" required>
-        <button onclick="calculateAge()">Calculate Age</button>
-        <p id="result"></p>
+        <input type="date" id="dob" class="form-control" required>
     </div>
+        <button onclick="calculateAge()">Calculate Age</button>
+        <p id="result" class="mt-6 text-center"></p>
+    </div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
